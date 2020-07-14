@@ -1,0 +1,18 @@
+version: "2"
+services:
+  misc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ctfhub/base_misc_socat_python_27
+
+  misc-test:
+    build:
+      context: .
+      dockerfile: example.Dockerfile
+    image: ctfhub/base_misc_socat_python_27_test
+    ports:
+      - "10000:10000"
+    environment:
+      - FLAG=ctfhub{base_pwn}
+      - COMMAND=./app.py

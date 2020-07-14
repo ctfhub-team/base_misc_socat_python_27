@@ -1,0 +1,7 @@
+name: base_misc_socat_python_27
+title: 基础镜像 Misc Socat Python 2.7
+desc: 基础镜像 Misc Socat Python 2.7
+tags:
+  - misc
+  - socat
+  - python
